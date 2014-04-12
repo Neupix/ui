@@ -31,7 +31,7 @@ function load(section,article) {
 
 	var moving = setTimeout(function() {
 		$('.fade').removeClass('active fade');
-	},500);
+	},300);
 }
 
 function closeSide() {
@@ -39,18 +39,18 @@ function closeSide() {
 }
 
 /* ui functions */
-$('*[open-nav]').on('click', function() {
+$('a[open-nav]').on('click', function() {
 	event.preventDefault();
 	$body.addClass('showSide');
 });
 
-$('*[data-section]').on('click', function() {
+$('a[data-section]').on('click', function() {
 	event.preventDefault();
 	load($(this).attr('data-section'),0);
 	closeSide();
 })
 
-$('*[data-article]').on('click', function() {
+$('a[data-article]').on('click', function() {
 	event.preventDefault();
 	load(0,$(this).attr('data-article'));
 	closeSide();

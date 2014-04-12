@@ -1,9 +1,13 @@
-*{margin: 0;padding: 0;-webkit-transition: -webkit-transform .5s, opacity .5s;position: relative}
+*{margin: 0;padding: 0;-webkit-transition: -webkit-transform .3s, opacity .3s;position: relative}
 *, *:before, *:after {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box}
 
-body{font: 1rem/1.5 "Roboto", sans-serif;background: #eaeaea;width:100%;overflow-x:hidden}
+body,textarea,input{font: 1rem/1.5 "Roboto", sans-serif}
+body{background: #eaeaea;width:100%;overflow-x:hidden}
 a{text-decoration: none}
 img{display: block;border: 0;max-width: 100%;}
+
+form{}
+textarea,input{font-size:inherit;line-height: 1;padding: .5rem;display: block;border: 0;width: 100%;margin-bottom: 1rem;background: rgba(0,0,0,.25);color:#fff;box-shadow:inset rgba(0,0,0,.1) 0 1px 0, rgba(255,255,255,.2) 0 1px 0;}
 
 /* common components */
 header{width: 100%;line-height: 3rem;font-size:1.25rem;text-align: center;color:#fff}
@@ -24,6 +28,9 @@ section > header > nav a .fa{font-size: 1.5rem}
 article{font-size: .8rem;display: none;overflow: hidden;min-height: 100%}
 article h1{font-size: 1rem}
 article div{margin: 1rem;padding: 1rem;background: #fff;box-shadow:rgba(0,0,0,.1) 0 1px 0}
+article aside{margin: 1rem}
+
+article form{margin: 1rem;}
 
 .active{display: block}
 
