@@ -49,7 +49,7 @@ nav#side > header{}
 footer{position: absolute;bottom: 0;padding: 1rem;width: 100%;}
 
 /* components */
-.button{line-height: 3rem;display: block;text-align: center;background: #000;color:#fff;margin: 1rem 0;width: 100%;font-size: 1.25rem}
+.button{line-height: 3rem;display: block;text-align: center;background: #000;color:#fff;margin: 1rem 0;width: 100%;font-size: 1rem}
 
 /* states */
 body.showSide nav#side{-webkit-transform:translatex(18rem)}
